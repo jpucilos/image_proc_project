@@ -69,3 +69,11 @@ new_img = daltonize(original_img, "p")
 new_img.show()
 new_img_sim = sim_color_blindness(new_img, "p")
 new_img_sim.show()
+
+original_img_sim.save('sim.jpg')
+new_img.save('daltonized.jpg')
+new_img_sim.save('daltonized_sim.jpg')
+
+
+
+
