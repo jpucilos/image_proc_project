@@ -63,11 +63,11 @@ def daltonize(rgb, deficit='d'):
 #Testing
 original_img = PIL.Image.open('test.jpg')
 original_img.show()
-original_img_sim = sim_color_blindness(original_img, "p")
+original_img_sim = sim_color_blindness(original_img, "d")
 original_img_sim.show()
-new_img = daltonize(original_img, "p")
+new_img = daltonize(original_img, "d")
 new_img.show()
-new_img_sim = sim_color_blindness(new_img, "p")
+new_img_sim = sim_color_blindness(new_img, "d")
 new_img_sim.show()
 
 original_img_sim.save('sim.jpg')
